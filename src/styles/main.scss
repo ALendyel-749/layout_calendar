@@ -49,7 +49,7 @@ $start-days: (
 .calendar {
   display: flex;
   flex-wrap: wrap;
-  width: 707px;
+  width: ($calendar-columns * $day-size) + (($calendar-columns - 1) * $day-gap);
   padding: $calendar-padding;
   gap: $day-gap;
 }
